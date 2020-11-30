@@ -5,9 +5,10 @@ export const createCards = cards => {
     acc += `
     <li>
     <h2>${card.title}</h2>
-    <img src = ${card.img}/>
+    <img src = ${card.img} alt = ${card.title}/>
     <p>${card.description}</p>
     <p>${card.price}</p>
+    <button data-id=${card.id} data-category=${card.category} type="button">Add to cart </button>
     </li>`;
     return acc;
   }, '');

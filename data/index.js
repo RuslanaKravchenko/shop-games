@@ -146,7 +146,24 @@ const rpg = [
 
 const data = {
   games: { actions, rpg },
-  navigationsLink: ['Actions', 'RPG', 'Cart', 'New Product'],
+  navigationsLink: [
+    {
+      name: 'Actions',
+      value: 'actions',
+    },
+    {
+      name: 'RPG',
+      value: 'rpg',
+    },
+    {
+      name: 'Cart',
+      value: 'cart',
+    },
+    {
+      name: 'New Product',
+      value: 'NewProduct',
+    },
+  ],
   cart: [],
 };
 
